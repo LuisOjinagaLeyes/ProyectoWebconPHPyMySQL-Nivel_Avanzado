@@ -1,0 +1,368 @@
+.container {
+  width:1080px;
+  margin:0px auto;
+  font-size:1em;
+  font-family: "Arial", Georgia, Serif;
+  font-size: 15px;
+}
+header {
+  text-align:center;
+  border: 1px solid #666;
+  background: #cccccc;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+section,aside {
+  margin-top: 5px;
+  padding: 10px;
+  -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+
+}
+section {
+  float: left;
+  width: 70%;
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+aside {
+  float: right;
+  width: 26%;
+  background:#ccc;
+  color: #333;
+}
+nav {
+  padding:0.2%;
+  background:#f06156;
+  margin-top: 0.5%;
+}
+nav ul {
+  list-style-type:none;
+  padding:0px;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li:hover {
+  background-color: #ccc;
+  text-decoration: underline;
+}
+nav ul li a {
+  display:inline-block;
+  text-align:center;
+  text-decoration:none;
+  color: #75302a;
+  font-weight: bold;
+  padding:6px 15px;
+  margin:2px;
+  background:#fafafa;
+  -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0px 10px 0px;
+  background-color: #333;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
+
+h2 {
+  color: #f06156;
+}
+h4 {
+  color: #f06156;
+}
+/*Unidad 1*/
+.btn_registrar {
+  font-weight: bold;
+  color: #333;
+}
+.btn_registrar:hover{
+  background-color: #f06156;
+}
+.agenda_alumnos{
+  width: 150px;
+  height: 155px;
+  margin: 5px;
+  background-color: #f06156;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+.borrar a {
+  color: black;
+  clear: both;
+  font-weight: bold;
+}
+.borrar a:hover {
+  color: red;
+}
+/*Fin Unidad 1*/
+/*Unidad 3*/
+.form_comentario input, textarea{
+  width: 540px;
+  margin-top: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 10px;
+}
+
+.form_comentario button {
+  display: block;
+  margin-top: 5px;
+  padding: 10px 20px 10px 20px;
+  border: 0px;
+}
+
+.comentario{
+  height: auto;
+  word-wrap: break-word;
+  }
+/*Fin Unidad 3*/
+/*Unidad 4*/
+.responsive_imagen{
+  width: 100%;
+  height: auto;
+}
+/*Fin Unidad 4*/
+/* Unidad 5 */
+.responsive_Captcha{
+  width: 15%;
+}
+/*Fin Unidad 5 */
+/* Unidad 7 */
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+td,th{
+  border: 1px solid #333;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #ddd;
+}
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f06156;
+  color: #333;
+}
+/*Fin Unidad 7 */
+/* pantalla maximo 980px */
+@media screen and (max-width:980px) {
+  .container {
+    width:98%;
+  }
+  section {
+    width:68%;
+  }
+
+  /*Unidad 1*/
+.agenda_alumnos{
+  width: 26%;
+  margin: 5px;
+  padding: 10px;
+}
+/*Fin Unidad 1*/
+/*Unidad 3*/
+.form_comentario input, textarea{
+  width: 56%;
+  margin-top: 1%;
+  padding: 1.2%;
+  padding-left: 1%;
+}
+
+.form_comentario button {
+  margin-top: 1%;
+  padding: 2% 3% 2% 3%;
+  border: 0%;
+}
+/*Fin Unidad 3*/
+/* Unidad 7 */
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+td,th{
+  border: 0% solid #333;
+  padding: 0%;
+}
+th{
+  padding-top: 1.2%;
+  padding-bottom: 1.2%;
+}
+/*Fin Unidad 7 */
+}
+
+/* pantalla maximo 700px */
+@media screen and (max-width:700px) {
+  aside,section {
+    float:none;
+    width:96%;
+    font-size:1.2em;
+  }
+  nav, section {
+    font-size:1.2em;
+  }
+  aside {
+    margin-top:5px;
+    width: auto;
+    background:#333;
+    color: #fff;
+  }
+  nav ul {
+    float:none;
+    clear:both;
+  }
+
+  /*Unidad 1*/
+.agenda_alumnos{
+  width: auto;
+  height: auto;
+  margin: 1%;
+  padding: 1%;
+  float: none;
+}
+input {
+  font-size: 1.2em;
+}
+/*Fin Unidad 1*/
+/*Unidad 3*/
+.form_comentario input, textarea{
+  width: auto;
+  margin-top: 1%;
+  padding: 1%;
+  padding-left: 1%;
+  font-size: medium;
+  display: block;
+}
+
+.form_comentario button {
+  margin-top: 1%;
+  padding: 1% 2% 1% 2%;
+  border: 0%;
+  font-size: medium;
+}
+.comentario {
+  font-size: medium;
+}
+/*Fin Unidad 3*/
+/* Unidad 5 */
+.responsive_Captcha{
+  width: 15%;
+}
+/*Fin Unidad 5 */
+/* Unidad 7 */
+table{
+  width: 100%;
+}
+td,th{
+  border: 0%;
+  padding: 0%;
+}
+th{
+  padding-top: 1.2%;
+  padding-bottom: 1.2%;
+}
+.btn_registrar{
+  font-size: 1.0em;
+}
+/*Fin Unidad 7 */
+}
+
+/* pantalla maximo 480px */
+@media screen and (max-width:480px) {
+  aside {
+    display:block;
+    background:#333;
+    color: #fff;
+    font-size:1.5em;
+  }
+  nav, section {
+    font-size:1.5em;
+  }
+  section {
+    width:94%;
+  }
+  nav ul {
+    display: table;
+    text-align: center;
+    float: none;
+    width:100%;
+  }
+  nav ul li {
+    float:none;
+  }
+
+  /*Unidad 1*/
+.agenda_alumnos{
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  float: none;
+}
+input {
+  font-size: 1.5em;
+}
+/*Fin Unidad 1*/
+/*Unidad 3*/
+.form_comentario input, textarea{
+  width: 100%;
+  margin-top: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 1%;
+  font-size: small;
+}
+
+.form_comentario button {
+  display: block;
+  margin-top: 1%;
+  padding: 1.5% 2.5% 1.5% 2.5%;
+  border: 0%;
+  font-size: small;
+}
+
+.comentario{
+  height: auto;
+  word-wrap: break-word;
+  font-size: small;
+  }
+/*Fin Unidad 3*/
+/* Unidad 5 */
+.responsive_Captcha{
+  width: 25%;
+}
+/*Fin Unidad 5 */
+/* Unidad 7 */
+table{
+  width: auto;
+  font-size: small;
+}
+td,th{
+  border: 0% solid #333;
+  padding: 0%;
+}
+th{
+  padding-top: 1.2%;
+  padding-bottom: 1.2%;
+}
+/*Fin Unidad 7 */
+}
